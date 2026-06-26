@@ -124,8 +124,8 @@ Click `BulkingTrackerPro.html` → **Download raw file** → Open in Chrome
 ## 🎯 My Bulking Goals (built into the app)
 
 ```
-Starting weight   →  55 kg
-Weekly gain rate  →  +0.3 kg / week
+Starting weight   →  62 kg
+Weekly gain rate  →  +2.12 kg / week
 Daily calories    →  2800 kcal
 Daily protein     →  160g
 Daily carbs       →  330g
