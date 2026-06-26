@@ -1,75 +1,140 @@
+<div align="center">
+
+<img src="https://img.shields.io/badge/Built%20with-HTML%20%2B%20JS-orange?style=for-the-badge&logo=html5" />
+<img src="https://img.shields.io/badge/AI%20Powered-Claude%20Vision-green?style=for-the-badge&logo=anthropic" />
+<img src="https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge" />
+<img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" />
+
 # 💪 Bulking Tracker Pro
 
-A **professional personal fitness tracking web app** built as a single HTML file — no backend, no install, works in any browser.
+### AI-Powered Personal Fitness & Nutrition Tracker
 
-> Built by **Kalyan Kunduru** — B.Tech CSE (AI/ML) @ SVCE Bengaluru
+**A full-featured fitness web app in a single HTML file — no install, no backend, works on any device.**
+
+[🚀 Live Demo](https://kundurukalyan945-max.github.io/bulking-tracker-pro/BulkingTrackerPro.html) · [📂 Source Code](https://github.com/kundurukalyan945-max/bulking-tracker-pro) · [👤 Portfolio](https://github.com/kundurukalyan945-max)
+
+<br/>
+
+> Built by **Kalyan Kunduru** — B.Tech CSE (AI/ML) @ SVCE Bengaluru 2026
+
+</div>
 
 ---
 
-## 🌐 Live Demo
-👉 **[Open App](https://kundurukalyan945-max.github.io/bulking-tracker-pro/BulkingTrackerPro.html)**
+## 🎯 What is this?
+
+Bulking Tracker Pro is a **complete fitness tracking app** I built for my personal bulking journey — going from 55kg with a target of +0.3kg/week. Instead of using 3-4 different apps, I built one single tool that handles everything:
+
+- 🍽️ Every meal logged and macro-tracked
+- 📸 **AI scans food photos** and fills in nutrition automatically
+- 🏋️ My full PPL workout split — fully customizable
+- ⚖️ Body weight curve over the bulk
+- 💧 Water, sleep, supplements — all in one place
 
 ---
 
 ## ✨ Features
 
-| Module | What it does |
-|---|---|
-| 🍽️ **Diet Log** | Track daily calories, protein, carbs, fat with macro progress bars |
-| 📸 **AI Food Scanner** | Take a photo of your meal — Claude Vision AI identifies food and auto-fills all macros |
-| 🏋️ **Workout Planner** | Full editable PPL split — add, edit, delete exercises and days |
-| 💧 **Water Tracker** | 14-glass tap tracker with 3.5L daily goal |
-| ⚖️ **Body Tracker** | Log weight daily, see bulk progress curve chart |
-| 🌙 **Sleep Log** | Track sleep hours and quality for recovery monitoring |
-| 💊 **Supplement Stack** | Daily check-off for Creatine, Whey, D3/K2, Magnesium |
-| 📊 **Progress Charts** | 7-day calorie and protein trend charts, weekly dot trackers |
-| 🏆 **Personal Records** | Log and track PRs for key lifts |
-| 💾 **Offline Storage** | All data saved to localStorage — works fully offline |
+| Tab | Feature | Details |
+|-----|---------|---------|
+| 🍽️ **Diet** | Macro tracking | Calories, Protein, Carbs, Fat with live progress bars |
+| 🍽️ **Diet** | Quick add chips | 15 common Indian bulking foods — one tap to log |
+| 🍽️ **Diet** | Day navigation | Browse any past or future day |
+| 📸 **AI Scan** | Live camera | Opens phone/webcam camera to capture food |
+| 📸 **AI Scan** | Photo upload | Upload any food image from gallery |
+| 📸 **AI Scan** | Claude Vision AI | Identifies food, estimates portions, calculates all macros |
+| 📸 **AI Scan** | One-tap logging | Adds all detected foods to your diet log instantly |
+| 🏋️ **Workout** | PPL Split | 6-day Push/Pull/Legs program pre-loaded |
+| 🏋️ **Workout** | Full editor | Add, edit, delete exercises and entire workout days |
+| 🏋️ **Workout** | Personal Records | Log and track PRs for any lift |
+| 📊 **Menu** | 7-day charts | Calorie and protein bar/line charts (Chart.js) |
+| 📊 **Menu** | Weekly dots | Visual diet and workout consistency tracker |
+| 📊 **Menu** | Body weight | Log daily weight, see bulk curve chart |
+| 📊 **Menu** | Sleep log | Track hours and quality with visual bar |
+| 📊 **Menu** | Water tracker | 14-glass tap tracker = 3.5L daily goal |
+| 📊 **Menu** | Supplements | Daily check-off for full stack with weekly adherence |
+| 💾 **All** | Offline storage | Everything saved to localStorage — works without internet |
 
 ---
 
-## 🤖 AI Food Scanner
+## 🤖 AI Food Scanner — How It Works
 
-The AI Scan tab uses the **Claude Vision API (claude-sonnet-4-6)** to:
-1. Capture a live camera photo or accept an uploaded image
-2. Identify all food items visible in the image
-3. Estimate portion sizes and calculate macros
-4. Auto-add everything to your diet log in one tap
+This is the standout feature. Using **Claude Vision API (claude-sonnet-4-6)**:
 
-Supports Indian foods (dal, roti, paneer, soya chunks, etc.)
+```
+📸 Take photo  →  🤖 Claude AI analyzes  →  📋 Macros appear  →  ✅ One tap to log
+```
+
+1. Open the **AI Scan** tab
+2. Tap **Open Camera** → point at your food
+3. Tap **Capture** (or upload a photo)
+4. Claude identifies every food item, estimates portion size, calculates kcal/protein/carbs/fat
+5. Select which meal to assign it to → tap **Add All to Diet Log**
+
+Handles Indian foods — dal, roti, paneer, soya chunks, rice, curd, and more.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **HTML5** — single file app, zero dependencies to install
-- **CSS3** — dark theme with CSS variables, mobile-first responsive design
-- **Vanilla JavaScript** — no frameworks
-- **Chart.js** — calorie/protein trend charts and body weight curve
-- **Claude Vision API** — AI-powered food photo analysis
-- **localStorage** — persistent data storage across sessions
+```
+Frontend     →  HTML5 + CSS3 + Vanilla JavaScript (zero frameworks)
+Charts       →  Chart.js 4.4.1
+AI Vision    →  Anthropic Claude Vision API (claude-sonnet-4-6)
+Fonts        →  Google Fonts (Inter + DM Mono)
+Storage      →  Browser localStorage (fully offline)
+Deployment   →  GitHub Pages (single file, instant deploy)
+```
+
+No Node.js. No React. No build step. Just one `.html` file.
 
 ---
 
-## 📱 How to Use
+## 📱 Screenshots
 
-### Option 1 — Live (GitHub Pages)
-Just open the live demo link above. Works on phone and desktop.
-
-### Option 2 — Download & Open Locally
-1. Download `BulkingTrackerPro.html`
-2. Open it in Chrome, Firefox, or Safari
-3. Start logging — all data saves to your browser automatically
+| Diet Log | AI Scanner | Workout Editor |
+|----------|-----------|----------------|
+| Macro grid with progress bars | Camera + AI result | Editable PPL split |
+| Quick-add Indian food chips | Portion detection | Add/edit/delete exercises |
+| Day navigation | One-tap log | Personal record tracker |
 
 ---
 
-## 🎯 Designed For
+## 🏃 How to Run
 
-- Bulking phase tracking (target: +0.3 kg/week)
-- Starting weight: 55 kg
-- Daily goals: **2800 kcal · 160g Protein · 330g Carbs · 70g Fat**
-- PPL split (Push/Pull/Legs) — 6 days/week
-- Ankle-friendly exercise alternatives included
+### Option 1 — Live Demo (instant)
+```
+https://kundurukalyan945-max.github.io/bulking-tracker-pro/BulkingTrackerPro.html
+```
+
+### Option 2 — Download and open locally
+```bash
+# Clone the repo
+git clone https://github.com/kundurukalyan945-max/bulking-tracker-pro.git
+
+# Just open the file — no npm install, no build
+open bulking-tracker-pro/BulkingTrackerPro.html
+```
+
+### Option 3 — Direct download
+Click `BulkingTrackerPro.html` → **Download raw file** → Open in Chrome
+
+---
+
+## 🎯 My Bulking Goals (built into the app)
+
+```
+Starting weight   →  55 kg
+Weekly gain rate  →  +0.3 kg / week
+Daily calories    →  2800 kcal
+Daily protein     →  160g
+Daily carbs       →  330g
+Daily fat         →  70g
+Workout split     →  PPL — 6 days/week
+Water target      →  3.5L / day
+```
+
+Special ankle-friendly exercise substitutions included (leg press, Bulgarian split squat, seated calf raise) based on personal injury history.
 
 ---
 
@@ -77,20 +142,44 @@ Just open the live demo link above. Works on phone and desktop.
 
 ```
 bulking-tracker-pro/
-├── BulkingTrackerPro.html   # Complete app (single file)
-└── README.md                # This file
+│
+├── BulkingTrackerPro.html   ← Entire app (HTML + CSS + JS in one file)
+└── README.md                ← This file
 ```
 
 ---
 
-## 🔗 Connect
+## 🔗 More Projects
 
-- **GitHub:** [kundurukalyan945-max](https://github.com/kundurukalyan945-max)
-- **LinkedIn:** [Kalyan Kunduru](https://linkedin.com/in/your-linkedin-here)
-- **AI Career Suite:** [ai-agent-2026](https://github.com/kundurukalyan945-max/ai-agent-2026)
+| Project | Description | Link |
+|---------|-------------|------|
+| 🤖 **AI Career Suite** | Multi-agent career toolkit (Resume, Interview, Jobs, Coach) | [View →](https://github.com/kundurukalyan945-max/ai-agent-2026) |
+| 💪 **Bulking Tracker Pro** | This project | You're here |
+
+---
+
+## 👤 About Me
+
+**Kalyan Kunduru** — Final year B.Tech CSE (AI/ML) student at SVCE Bengaluru (2026)
+
+- 🎓 Specializing in AI/ML and Python full-stack development
+- 🏋️ 6-day PPL training, currently on a bulking phase
+- 💻 Building AI-powered tools and web apps
+- 📍 Based in Bengaluru, India
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/your-linkedin-here)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/kundurukalyan945-max)
 
 ---
 
 ## 📄 License
 
-MIT License — free to use and modify.
+```
+MIT License — free to use, fork, and modify.
+```
+
+---
+
+<div align="center">
+  <sub>Built with 💚 and a lot of protein shakes · Kalyan Kunduru 2026</sub>
+</div>
